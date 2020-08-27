@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block breadcrumbs %}
+<div class="d-flex bd-highlight w-100 p-3 bg2 h0 btm2 fs14px">
+    <div class="ml2px"><b><a class="color2" href="{% url 'home' %}">Portfolio</a></b>/{{ current_page.title }}</div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="w-81 h100 float-left no-padding-any fs14px">
+        <div>
+            {{ current_page.description|safe }}
+            {% if current_page.title == 'Contact' %}
+                <!-- Alerts -->
+                {% include 'contact/contact.html' %}
+            {% endif %}
+            {% if current_page.title == 'Skills' %}
+            {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,195 @@
+#header{
+    background-color: rgb(60, 63, 65);
+}
+
+h1, a, p, label, li, ul, td, tr, th, h2, h3, h4, h5, h6{
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+    border-bottom: none;
+}
+
+#user-tools{
+    color: rgb(183, 185, 185);
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#user-tools a{
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-sidebar .module th{
+    background-color: rgb(43, 43, 43);
+}
+
+#nav-sidebar{
+    background-color: rgb(43, 43, 43);
+    border: none
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+#content-main th, td{
+    background-color: rgb(43, 43, 43);
+    border-color: rgb(85, 85, 85);
+}
+
+#recent-actions-module{
+    background-color: rgb(43, 43, 43) !important;
+}
+
+#recent-actions-module h2{
+    background-color: rgb(49, 51, 53) !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+    border: none !important;
+}
+
+#changelist{
+    background-color: rgb(43, 43, 43) !important;
+}
+
+a, span{
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#content-related{
+    background-color: rgb(43, 43, 43) !important;
+}
+
+caption{
+    background-color: rgb(49, 51, 53) !important;
+}
+
+caption a{
+
+    color: rgb(183, 185, 185) !important;
+}
+
+.paginator{
+    background-color: rgb(49, 51, 53) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#searchbar{
+    background-color: rgb(81, 81, 81);
+}
+
+input, textarea, button, .cancel-link{
+    background-color: rgb(81, 81, 81) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+select{
+    -webkit-appearance: none;
+    background-color: rgb(81, 81, 81) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#changelist-filter h2, h3{
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#changelist-filter h2{
+    background-color: rgb(49, 51, 53) !important;
+}
+
+#changelist-filter{
+    background-color: rgb(43, 43, 43) !important;
+    marker: none !important;
+}
+
+#toolbar{
+    background-color: rgb(49, 51, 53) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.selected{
+    border-color: rgb(43, 43, 43) !important;
+}
+
+.breadcrumbs{
+    background-color: rgb(49, 51, 53) !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.object-tools li a{
+    background-color: rgb(81, 81, 81) !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+fieldset, .submit-row{
+    background-color: rgb(43, 43, 43) !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+    border-color: rgb(43, 43, 43) !important;
+}
+
+fieldset div{
+    border-color: rgb(49, 51, 53) !important;
+}
+
+.actions{
+    background-color: rgb(43, 43, 43) !important;
+
+}
+
+#action-toggle{
+    color: red !important;
+}
+
+.success{
+    background-color: rgb(49, 51, 53) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.errorlist{
+    background-color: rgb(43, 43, 43) !important;
+
+}
+
+.errorlist li{
+    padding-left: 6px !important;
+    background-color: rgb(49, 51, 53) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.errornote{
+    background-color: rgb(49, 51, 53) !important;
+    border: none !important;
+    color: rgb(183, 185, 185) !important;
+    font-family: 'Roboto', sans-serif !important;
+
+}
+
+html{
+    background-color: rgb(43, 43, 43);
+}
+
+.login, .colM, #footer{
+    background-color: rgb(43, 43, 43) !important;
+    border: rgb(43, 43, 43) !important;
+}
+
+#container{
+    border: rgb(43, 43, 43) !important;
+    background-color: rgb(43, 43, 43) !important;
+}

@@ -1,0 +1,14 @@
+{% load static %}
+<div class="d-flex bd-highlight w-100 p-3 bg2 h0 btm2 r2 fs14px">
+    <div class="ml2px w-15 r2 fs14px"></div>
+    <div class="ml2px fs14px">
+        {% if current_subpage %}
+            <i class="material-icons fs14px">{{ current_subpage.icon }}</i>
+            {{ current_subpage.url }}
+        {% else %}
+            <i class="material-icons fs14px">{{ current_page.icon }}</i>
+            {{ current_page.title|lower }}
+        {% endif %}
+
+         &nbsp;<a class="color3" href="{% url 'home' %}">&times;</a></div>
+</div>

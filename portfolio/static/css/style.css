@@ -1,0 +1,181 @@
+.bg1{
+    background-color: rgb(43, 43, 43);
+    color: rgb(183, 185, 185);
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg2{
+    color: rgb(187, 187, 187);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(60, 63, 65);
+
+}
+
+.bg3{
+    color: rgb(96, 99, 102);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(49, 51, 53);
+}
+
+.h100{
+    height: 100vh;
+}
+
+.h0{
+    height: 25px !important;
+    padding: 0 !important;
+}
+
+.w-4 {
+    width: 4% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-81 {
+    width: 81% !important;
+}
+
+p span{
+    display: block;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+
+.fs14px{
+    font-size: 14px;
+}
+
+.nols{
+    list-style: none !important;
+}
+
+.margin1px{
+    margin: 1px;
+}
+
+.ml2px{
+    padding: 2px 6px 2px 6px;
+}
+
+.btm1{
+    border-bottom: 1px solid rgb(81, 81, 81) !important;
+}
+
+.btm2{
+    border-bottom: 1px solid rgb(50, 50, 50) !important;
+}
+
+.r1{
+    border-right: 1px solid rgb(85, 85, 85) !important;
+}
+
+.r2{
+    border-right: 1px solid rgb(50, 50, 50) !important;
+}
+
+.no-padding{
+    padding-top: 0 !important;
+}
+
+.no-padding-top-left6{
+    padding-top: 0 !important;
+    padding-left: 6px !important;
+}
+
+.no-top-margin{
+    margin-top: 0 !important;
+}
+
+footer{
+    bottom: 0;
+    position: fixed;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+.input-line{
+    background-color: rgb(50, 50, 50);
+    padding: 0;
+    margin: 0 !important;
+    font-size: 14px;
+    border: 0;
+    line-height: 21px;
+    text-align: left;
+}
+
+.input-line-ta{
+    background-color: rgb(50, 50, 50);
+    padding: 0;
+    margin: 0 !important;
+    font-size: 14px;
+    border: 0;
+    min-height: 189px;
+    resize: none;
+}
+
+.no-padding-any{
+    padding: 0 !important;
+}
+
+.send{
+    color: rgb(108, 173, 97);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.message-error{
+    color: rgb(153, 70, 40);
+    font-family: 'Roboto', sans-serif;
+}
+
+.message-success{
+    color: rgb(108, 173, 97);
+    font-family: 'Roboto', sans-serif;
+}
+
+.curr-page{
+    background-color: rgb(75, 110, 175) !important;
+}
+
+.color2{
+    color: rgb(187, 187, 187) !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-align-right{
+    text-align: right;
+}
+
+.href-link{
+    color: rgb(203, 120, 50) !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.color3{
+    color: rgb(96, 99, 102) !important;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+.inline{
+    white-space: nowrap !important;
+}
+
+/*
+background-color: rgb(43,43,43);
+background-color: rgb(49,51,53);
+color: rgb(187, 187, 187);
+*/

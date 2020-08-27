@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block breadcrumbs %}
+<div class="d-flex bd-highlight w-100 p-3 bg2 h0 btm2 fs14px">
+    <div class="ml2px"><b>Portfolio</b></div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="w-81 p-3 bg4 h100 float-left no-padding-any fs14px">
+        <div>
+            {{ current_page.description|safe }}
+            <br>
+        </div>
+    </div>
+
+{% endblock %}

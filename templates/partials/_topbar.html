@@ -1,0 +1,13 @@
+{% load static %}
+<div class="d-flex bd-highlight w-100 p-3 bg2 h0 btm1 fs14px">
+    <div class="ml2px no-margin"><img src="{% static 'images/logo.png' %}" alt=""></div>
+    <div class="ml2px">Szymon Jarząb Portfolio</div>
+    <div class="ml2px
+            {% if 'contact' in request.path %}
+                curr-page
+            {% endif %}
+        "><a class="color2" href="{% url 'page' 'contact' %}">Contact me</a></div>
+    <div class="ml2px"></div>
+</div>
+
+

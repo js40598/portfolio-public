@@ -1,0 +1,69 @@
+{% load static %}
+
+<div class="w-15 p-3 bg2 h100 float-left fs14px r2 overflow-hidden no-padding-any">
+    <p class="no-margin no-padding-top-left6 inline
+            {% if request.path == '/' %}
+                curr-page
+            {% endif %}
+        ">
+        <i class="material-icons fs14px">keyboard_arrow_down</i>&nbsp;&nbsp;<a class="color2" href="{% url 'home' %}">Portfolio</a></p>
+    {% for page in pages %}
+        <p class="no-margin no-padding-top-left6 inline
+            {% if current_subpage %}
+                {% if current_page in request.path %}
+                    curr-page
+                {% endif %}
+            {% else %}
+                {% if page.slug in request.path %}
+                    curr-page
+                {% endif %}
+            {% endif %}
+        ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{% if page.icon == 'folder' %}
+        <i class="material-icons fs14px">
+            {% if "projects" in request.path %}
+                keyboard_arrow_down</i>
+            {% else %}
+                keyboard_arrow_right</i>
+            {% endif %}
+            {% else %}
+            {% endif %}
+        <i class="material-icons fs14px">{{ page.icon }}</i>&nbsp;<a class="color2" href="{% url 'home' %}{{ page.slug }}">{{ page.title }}</a></p>
+
+    {% endfor %}
+
+
+
+    {% if "projects" in request.path %}
+        {% for project in projects %}
+            <p class="no-margin no-padding-top-left6 inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="material-icons fs14px">keyboard_arrow_down</i>
+                <i class="material-icons fs14px">{{ project.icon }}</i> {{ project.title }}</p>
+
+            {% for subpage in subpages %}
+                {% if subpage.project == project %}
+                    <p class="no-margin no-padding-top-left6 inline
+                        {% if subpage.url == current_page.url %}
+                            curr-page
+                        {% endif %}
+                    ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="material-icons fs14px">{{ subpage.icon }}</i>
+            <a class="color2" href="{% url 'home' %}projects/{{ project.slug }}/{{ subpage.slug }}">{{ subpage.title }}</a></p>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+
+    {% endif %}
+
+
+</div>
+
+
+<div class="w-4 bg3 h100 float-left no-padding r1">
+    <div class="w-30">
+        <div class="w-25 float-right">
+            {% for i in rows %}
+                <p class="no-margin float-right fs14px">{{ i }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>

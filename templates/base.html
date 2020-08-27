@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SzymonJarząb/{% if current_page %}{{ current_page.title }}{% else %}{{ current_subpage.title }}{% endif %}</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon" />
+
+    <!-- Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body class="bg1">
+
+<!-- Top Bar -->
+{% include 'partials/_topbar.html' %}
+{% block breadcrumbs %}{% endblock %}
+{% include 'partials/_topbar2.html' %}
+
+<!-- Navbar -->
+{% include 'partials/_navbar.html' %}
+
+<!-- Content -->
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+{% include 'partials/_footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<form action="{% url 'page' 'contact' %}" method="POST">
+    {% csrf_token %}
+    <p class="no-margin fs14px no-padding-top-left6">Your name:</p>
+    <input type="text" name="name" class="input-line no-padding-top-left6 w-100 color2" value="{{ values.name }}" required>
+    <br><br>
+
+    <p class="no-margin fs14px no-padding-top-left6">Your company (if any):</p>
+    <input type="text" name="company" class="input-line no-padding-top-left6 w-100 color2" value="{{ values.company }}">
+    <br><br>
+    <p class="no-margin fs14px no-padding-top-left6">Your e-mail:</p>
+    <input type="email" name="email" class="input-line no-padding-top-left6 w-100 color2" value="{{ values.email }}" required>
+    <br><br>
+    <p class="no-margin fs14px no-padding-top-left6">Message:</p>
+    <textarea name="text" class="input-line-ta no-padding-top-left6 w-100 color2" required
+              oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'>{{ values.text }}</textarea>
+    <br>
+    <br>
+    <p class="no-margin fs14px no-padding-top-left6">Done?</p>
+        <p class="input-line no-padding-top-left6 w-100">
+        <input type="submit" value="Send" class="input-line no-padding-any send"></p>
+
+</form>
+<br>
+<!-- Alerts -->
+{% include 'partials/_alerts.html' %}

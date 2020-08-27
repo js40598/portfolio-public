@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block breadcrumbs %}
+<div class="d-flex bd-highlight w-100 p-3 bg2 h0 btm2 fs14px">
+    <div class="ml2px"><b><a class="color2" href="{% url 'home' %}">Portfolio</a></b>/<a
+            href="{% url 'home' %}projects" class="color2">Projects</a>/{{ current_project.title }}/{{ current_page.title }}</div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="w-81 h100 float-left no-padding-any fs14px">
+        <div class="w-75">
+            {{ current_subpage.description|safe }}
+        </div>
+    </div>
+
+{% endblock %}
