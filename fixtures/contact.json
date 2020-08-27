@@ -1,0 +1,1 @@
+[{"model": "contact.message", "pk": 8, "fields": {"name": "asdf", "company": "asdf", "email": "asdf@asdf", "text": "asdfasdf", "is_answered": false, "contact_date": "2020-08-27T00:10:24.659Z"}}]
